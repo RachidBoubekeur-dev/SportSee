@@ -1,1 +1,8 @@
 @import './utils/variables';
+
+.App {
+    font-family: $police1;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
