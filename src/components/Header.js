@@ -1,12 +1,11 @@
 import '../styles/css/Header.css';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo2.png';
 
 const Header = () => {
     return (
-        <header className="Header">
+        <header>
             <p>
                 <img src={logo} alt="Logo SportSee" />
-                SportSee
             </p>
 
             <nav>

@@ -1,1 +1,81 @@
 @import './utils/variables';
+
+header {
+    background: $color1;
+    height: 55px;
+    color: $color2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-top: 3px;
+    & > p {
+        padding-top: 5px;
+        & > img {
+            width: 110px;
+            cursor: pointer;
+        }
+    }
+    & > nav {
+        width: 87%;
+        & > ul {
+            display: inline-flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            width: 96%;
+            font-family: $police1;
+            font-size: 14px;
+            & > li {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    header {
+        height: 60px;
+        & > p > img {
+            width: 125px;
+        }
+        & > nav {
+            width: 86%;
+            margin-left: 5%;
+            & > ul {
+                font-size: 16.5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        height: 65px;
+        & > p > img {
+            width: 130px;
+        }
+        & > nav {
+            width: 85%;
+            margin-left: 5%;
+            & > ul {
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    header {
+        height: 75px;
+        & > p > img {
+            width: 170px;
+        }
+        & > nav {
+            width: 89%;
+            margin-left: 6%;
+            & > ul {
+                font-size: 24px;
+            }
+        }
+    }
+}
