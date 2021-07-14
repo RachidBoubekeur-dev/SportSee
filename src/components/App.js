@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../styles/css/App.css';
 import Header from './Header';
+import NavLeft from './NavLeft';
 import imgLoading from '../assets/loading.gif';
 import logo from '../assets/logo2.png';
 
@@ -25,6 +26,7 @@ const App = () => {
                 </div>
             )}
             <Header />
+            <NavLeft />
         </main>
     );
 };
