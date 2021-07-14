@@ -9,16 +9,16 @@ const NavLeft = () => {
         <aside className="NavLeft">
             <nav>
                 <ul>
-                    <li>
+                    <li tabIndex="0">
                         <img src={icon1} alt="Icône yoga" />
                     </li>
-                    <li>
+                    <li tabIndex="0">
                         <img src={icon2} alt="Icône piscine" />
                     </li>
-                    <li>
+                    <li tabIndex="0">
                         <img src={icon3} alt="Icône vélo" />
                     </li>
-                    <li>
+                    <li tabIndex="0">
                         <img src={icon4} alt="Icône musculation" />
                     </li>
                 </ul>

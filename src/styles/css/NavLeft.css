@@ -1,3 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.NavLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto";
+  color: #ffffff;
+  background: #000000;
+  position: fixed;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  padding-top: 18%;
+}
+.NavLeft > nav {
+  margin-bottom: 6em;
+}
+.NavLeft > nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.NavLeft > nav > ul > li {
+  cursor: pointer;
+  margin-bottom: 25%;
+  transition: all 0.55s;
+}
+.NavLeft > nav > ul > li > img {
+  width: 37px;
+  border-radius: 2px;
+}
+.NavLeft > nav > ul > li:hover, .NavLeft > nav > ul > li:active, .NavLeft > nav > ul > li:focus {
+  transform: scale(0.9);
+}
+.NavLeft > p {
+  font-size: 8.5px;
+  transform: rotate(270deg);
+  width: max-content;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 1232px) {
+  .NavLeft {
+    width: 80px;
+    padding-top: 16%;
+  }
+  .NavLeft > nav {
+    margin-bottom: 6.5em;
+  }
+  .NavLeft > nav > ul > li > img {
+    width: 45px;
+  }
+  .NavLeft > p {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .NavLeft {
+    width: 90px;
+    padding-top: 15%;
+  }
+  .NavLeft > nav {
+    margin-bottom: 5em;
+  }
+  .NavLeft > nav > ul > li > img {
+    width: 53px;
+  }
+  .NavLeft > p {
+    font-size: 9.5px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .NavLeft {
+    width: 110px;
+    padding-top: 14%;
+  }
+  .NavLeft > nav {
+    margin-bottom: 7.5em;
+  }
+  .NavLeft > nav > ul > li > img {
+    width: 64px;
+  }
+  .NavLeft > p {
+    font-size: 13px;
+  }
+}
 
 /*# sourceMappingURL=NavLeft.css.map */
