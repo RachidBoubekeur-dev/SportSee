@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/css/App.css';
 import Header from './Header';
 import NavLeft from './NavLeft';
+import Dashboard from './Dashboard';
 import imgLoading from '../assets/loading.gif';
 import logo from '../assets/logo2.png';
 
@@ -27,6 +28,7 @@ const App = () => {
             )}
             <Header />
             <NavLeft />
+            <Dashboard />
         </main>
     );
 };
