@@ -2,13 +2,18 @@
 
 header {
     background: $color1;
+    position: fixed;
+    width: 100%;
     height: 55px;
+    top: 0;
+    left: 0;
     color: $color2;
     margin: 0;
     display: flex;
     align-items: center;
     padding-left: 1em;
     padding-top: 3px;
+    z-index: 1;
     & > p {
         padding-top: 5px;
         & > img {
@@ -27,6 +32,12 @@ header {
             font-size: 14px;
             & > li {
                 cursor: pointer;
+                transition: all 0.4s;
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $color3;
+                }
             }
         }
     }

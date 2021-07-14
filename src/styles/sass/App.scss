@@ -18,8 +18,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    animation: loadingOpacity 500ms;
-    animation-delay: 3200ms;
+    animation: loadingOpacity 650ms;
+    animation-delay: 3250ms;
+    z-index: 2;
     & > p > img {
         width: 200px;
     }
@@ -27,15 +28,16 @@
         position: absolute;
         bottom: 1em;
         right: 1em;
+        height: 12px;
         transform: scale(0.6);
         animation: loading 3.5s cubic-bezier(0, 0, 0, 0);
         padding-right: 0%;
         padding-left: 5%;
         background: $color1;
-        border-radius: 50px;
+        border-radius: 5px;
         box-shadow: 0px 13px 20px 0px #0000003d;
         & > img {
-            border-radius: 100%;
+            border-radius: 50px;
             width: 50px;
             margin-top: -110px;
         }
