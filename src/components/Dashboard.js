@@ -19,7 +19,15 @@ const Dashboard = (params) => {
                     </p>
                 </section>
             ) : (
-                'null'
+                <div className="DashboardError">
+                    <span>👀</span>
+                    <span>👃🏻</span>
+                    <span>👅</span>
+                    <span>🦿</span>
+                    <span>🦿</span>
+                    <span>🦾</span>
+                    <span>🦾</span>
+                </div>
             )}
         </div>
     );
