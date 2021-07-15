@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../styles/css/App.css';
 import Header from './Header';
 import NavLeft from './NavLeft';
@@ -8,12 +8,6 @@ import logo from '../assets/logo2.png';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 3500);
-    }, []);
-
     return (
         <main className="App">
             {loading && (
@@ -28,7 +22,7 @@ const App = () => {
             )}
             <Header />
             <NavLeft />
-            <Dashboard />
+            <Dashboard setLoading={setLoading} />
         </main>
     );
 };
