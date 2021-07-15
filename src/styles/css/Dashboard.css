@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.Dashboard {
+  padding-left: 140px;
+  padding-top: 67px;
+  font-family: "Roboto";
+}
+.Dashboard > h1 {
+  font-size: 30px;
+  margin-bottom: 17px;
+}
+.Dashboard > h1 > span {
+  color: #e60000;
+}
+.Dashboard > p {
+  font-size: 11.5px;
+  margin: 0;
+}
 
+@media screen and (min-width: 1232px) {
+  .Dashboard {
+    padding-left: 150px;
+    padding-top: 70px;
+  }
+  .Dashboard > h1 {
+    font-size: 31px;
+    margin-bottom: 19px;
+  }
+  .Dashboard > p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Dashboard {
+    padding-left: 166px;
+    padding-top: 78px;
+  }
+  .Dashboard > h1 {
+    font-size: 35px;
+  }
+  .Dashboard > p {
+    font-size: 13.5px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .Dashboard {
+    padding-left: 200px;
+    padding-top: 93px;
+  }
+  .Dashboard > h1 {
+    font-size: 40px;
+  }
+  .Dashboard > p {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=Dashboard.css.map */
