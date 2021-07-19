@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import '../styles/css/App.css';
-import Header from './Header';
-import NavLeft from './NavLeft';
-import Dashboard from './Dashboard';
+import Header from './dumb/Header.jsx';
+import NavLeft from './dumb/NavLeft.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 import imgLoading from '../assets/loading.gif';
 import logo from '../assets/logo2.png';
 

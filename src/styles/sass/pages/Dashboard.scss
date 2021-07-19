@@ -1,4 +1,4 @@
-@import './utils/variables';
+@import '../utils/variables';
 
 .Dashboard {
     padding-left: 140px;
@@ -24,7 +24,7 @@
     height: 100%;
     display: flex;
     background-color: white;
-    background-image: url('../../assets/error.png');
+    background-image: url('../../../assets/error.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;

@@ -1,6 +1,7 @@
-import useAxios from './hook/useAxios';
+import useAxios from '../hook/useAxios.jsx';
 import PropTypes from 'prop-types';
-import '../styles/css/Dashboard.css';
+import '../../styles/css/pages/Dashboard.css';
+import UserActivity from '../smart/UserActivity.jsx';
 
 const Dashboard = (params) => {
     const userData = useAxios('user/12');
@@ -17,6 +18,7 @@ const Dashboard = (params) => {
                     <p>
                         Félicitation ! Vous avez explosé vos objectifs hier 👏
                     </p>
+                    <UserActivity userId={userData.id} />
                 </section>
             ) : (
                 <div className="DashboardError">
