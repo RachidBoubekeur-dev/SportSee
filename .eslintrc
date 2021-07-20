@@ -1,6 +1,6 @@
 {
     "extends": ["react-app"],
     "rules": {
-        "allowCallExpression": true
+        "allowObject": true
     }
 }
