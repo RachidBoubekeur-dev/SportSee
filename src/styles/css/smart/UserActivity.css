@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.UserActivity {
+  position: relative;
+  background-color: #fbfbfb;
+  width: 575px;
+  height: 270px;
+  margin-top: 3em;
+  padding: 24px 2em 0em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.UserActivity > h4 {
+  display: contents;
+  font-size: 15px;
+}
+.UserActivity > ul {
+  display: flex;
+  color: #74798c;
+  font-weight: 500;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+}
+.UserActivity > ul > li::before {
+  content: ".";
+  width: 9px;
+  height: 26.35px;
+  display: inline-block;
+  transform: scale(4);
+}
+.UserActivity > ul > li:nth-of-type(1) {
+  margin-right: 2.9em;
+}
+.UserActivity > ul > li:nth-of-type(1)::before {
+  color: #000000;
+}
+.UserActivity > ul > li:nth-of-type(2)::before {
+  color: #e60000;
+}
+.UserActivity > .recharts-responsive-container {
+  position: absolute;
+  top: 4.5em;
+  left: 0;
+}
+
+/*# sourceMappingURL=UserActivity.css.map */
