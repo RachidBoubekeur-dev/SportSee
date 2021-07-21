@@ -1,19 +1,17 @@
+import { useContext } from 'react';
+import { IdContext } from '../context/MyContext.jsx';
 import useAxios from '../hook/useAxios';
-import PropTypes from 'prop-types';
 
-const UserActivity = (userId) => {
-    const userActivity = useAxios(`user/${userId.userId}/activity`);
-    console.log(userId.userId);
+const UserActivity = () => {
+    const userId = useContext(IdContext);
+    console.log(userId);
+    const userActivity = useAxios(`user/${userId}/activity`);
     console.log(userActivity);
     return (
         <article>
             <p>UserActivity</p>
         </article>
     );
-};
-
-UserActivity.propTypes = {
-    userId: PropTypes.number.isRequired,
 };
 
 export default UserActivity;

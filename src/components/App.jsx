@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import '../styles/css/App.css';
+import { IdContext } from './context/MyContext.jsx';
 import Header from './dumb/Header.jsx';
 import NavLeft from './dumb/NavLeft.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import imgLoading from '../assets/loading.gif';
 import logo from '../assets/logo2.png';
+import '../styles/css/App.css';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -22,7 +23,9 @@ const App = () => {
             )}
             <Header />
             <NavLeft />
-            <Dashboard setLoading={setLoading} />
+            <IdContext.Provider value={'12'}>
+                <Dashboard setLoading={setLoading} />
+            </IdContext.Provider>
         </main>
     );
 };

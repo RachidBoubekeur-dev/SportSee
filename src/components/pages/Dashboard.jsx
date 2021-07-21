@@ -1,10 +1,13 @@
+import { useContext } from 'react';
+import { IdContext } from '../context/MyContext.jsx';
 import useAxios from '../hook/useAxios.jsx';
+import UserActivity from '../smart/UserActivity.jsx';
 import PropTypes from 'prop-types';
 import '../../styles/css/pages/Dashboard.css';
-import UserActivity from '../smart/UserActivity.jsx';
 
 const Dashboard = (params) => {
-    const userData = useAxios('user/12');
+    const userId = useContext(IdContext);
+    const userData = useAxios(`user/${userId}`);
     setTimeout(() => {
         params.setLoading(false);
     }, 3500);
@@ -18,7 +21,7 @@ const Dashboard = (params) => {
                     <p>
                         Félicitation ! Vous avez explosé vos objectifs hier 👏
                     </p>
-                    <UserActivity userId={userData.id} />
+                    <UserActivity />
                 </section>
             ) : (
                 <div className="DashboardError">
