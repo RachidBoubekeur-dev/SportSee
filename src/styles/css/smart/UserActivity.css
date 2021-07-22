@@ -3,7 +3,7 @@
   position: relative;
   background-color: #fbfbfb;
   width: 575px;
-  height: 270px;
+  height: 300px;
   margin-top: 3em;
   padding: 24px 2em 0em 2em;
   display: flex;
@@ -39,8 +39,49 @@
 }
 .UserActivity > .recharts-responsive-container {
   position: absolute;
-  top: 4.5em;
-  left: 0;
+  bottom: 1.5em;
+  left: 2em;
+}
+
+.recharts-cartesian-grid-horizontal > line:nth-of-type(1) {
+  display: none;
+}
+
+.recharts-cartesian-grid-vertical {
+  display: none;
+}
+
+.recharts-cartesian-axis-line {
+  stroke: #dedede;
+}
+
+.recharts-cartesian-axis-tick-value > tspan {
+  font-size: 14px;
+}
+
+.recharts-yAxis > line {
+  display: none;
+}
+
+.recharts-cartesian-axis-tick-line {
+  display: none;
+}
+
+.custom-tooltip {
+  width: 60px;
+  height: 50px;
+  padding: 1.3em 0 1.3em 0;
+  background-color: #e60000;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=UserActivity.css.map */

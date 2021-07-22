@@ -7,7 +7,6 @@ import {
     XAxis,
     YAxis,
     Tooltip,
-    Legend,
     CartesianGrid,
     ResponsiveContainer,
 } from 'recharts';
@@ -24,6 +23,19 @@ const UserActivity = () => {
             else userActivity.sessions[i].day = day.slice(0, 2);
         }
     }
+
+    const CustomTooltip = ({ active, payload, label }) => {
+        if (active) {
+            return (
+                <div className="custom-tooltip">
+                    <p>{`${payload[0].value}kg`}</p>
+                    <p>{`${payload[1].value}Kcal`}</p>
+                </div>
+            );
+        }
+
+        return null;
+    };
     return (
         <article className="UserActivity">
             <h4>Activité quotidienne</h4>
@@ -32,30 +44,36 @@ const UserActivity = () => {
                 <li>Calories brûlées (kCal)</li>
             </ul>
             {userActivity ? (
-                <ResponsiveContainer width={'95.5%'}>
-                    <BarChart data={userActivity.sessions}>
-                        <XAxis dataKey="day" />
-                        <YAxis />
-                        <Tooltip
-                            wrapperStyle={{
-                                width: 100,
-                                backgroundColor: '#ccc',
-                            }}
+                <ResponsiveContainer width={'92%'} height={'65%'}>
+                    <BarChart data={userActivity.sessions} barGap={9}>
+                        <XAxis dataKey="day" dy={12.5} stroke={'#9B9EAC'} />
+                        <YAxis
+                            dataKey="calories"
+                            tickCount={3}
+                            orientation="right"
+                            dx={17}
+                            stroke={'#9B9EAC'}
                         />
-                        <Legend
-                            width={100}
-                            wrapperStyle={{
-                                top: 40,
-                                right: 20,
-                                backgroundColor: '#f5f5f5',
-                                border: '1px solid #d5d5d5',
-                                borderRadius: 3,
-                                lineHeight: '40px',
-                            }}
+                        <Tooltip content={<CustomTooltip />} />
+                        <CartesianGrid stroke="#DEDEDE" strokeDasharray="4 4" />
+                        <Bar
+                            dataKey="kilogram"
+                            id="barkg"
+                            fill="#000"
+                            barSize={7}
+                            radius={[3.5, 3.5, 0, 0]}
+                            animationBegin={2800}
+                            animationDuration={1600}
                         />
-                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                        <Bar dataKey="kilogram" fill="#000" barSize={10} />
-                        <Bar dataKey="calories" fill="#E60000" barSize={10} />
+                        <Bar
+                            dataKey="calories"
+                            id="barkCal"
+                            fill="#E60000"
+                            barSize={7}
+                            radius={[3.5, 3.5, 0, 0]}
+                            animationBegin={3000}
+                            animationDuration={1900}
+                        />
                     </BarChart>
                 </ResponsiveContainer>
             ) : (
