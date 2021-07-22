@@ -77,8 +77,8 @@ const UserActivity = () => {
                     </BarChart>
                 </ResponsiveContainer>
             ) : (
-                <div>
-                    <p>Charement...</p>
+                <div className="loadingState">
+                    <p>Chargement...</p>
                 </div>
             )}
         </article>

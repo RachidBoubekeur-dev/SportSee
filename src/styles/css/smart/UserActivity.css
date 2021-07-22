@@ -2,7 +2,7 @@
 .UserActivity {
   position: relative;
   background-color: #fbfbfb;
-  width: 575px;
+  width: 62%;
   height: 300px;
   margin-top: 3em;
   padding: 24px 2em 0em 2em;
@@ -41,6 +41,17 @@
   position: absolute;
   bottom: 1.5em;
   left: 2em;
+}
+.UserActivity > .loadingState {
+  position: absolute;
+  bottom: 0;
+  right: 0.5em;
+  margin: 0;
+}
+.UserActivity > .loadingState > p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .recharts-cartesian-grid-horizontal > line:nth-of-type(1) {
@@ -82,6 +93,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+@media screen and (min-width: 1232px) {
+  .UserActivity {
+    height: 320px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .UserActivity {
+    height: 340px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .UserActivity {
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=UserActivity.css.map */
