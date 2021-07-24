@@ -1,0 +1,124 @@
+@import '../utils/variables';
+
+.UserScore {
+    display: inline-flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 516px;
+    margin-left: 1.5em;
+    width: 176px;
+    height: 210px;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    margin-top: 2.35em;
+    margin-bottom: 2.35em;
+    & > h4 {
+        font-size: 15px;
+        line-height: 9px;
+        font-weight: 500;
+        position: absolute;
+        top: 0;
+        left: 14px;
+    }
+    & > p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        position: absolute;
+        width: 81px;
+        text-align: center;
+        color: #3535359f;
+        margin-top: 2em;
+        & > span {
+            font-size: 26px;
+            font-weight: 700;
+            color: $color1;
+        }
+    }
+    & > .loadingState {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.5em;
+        margin: 0;
+        & > p {
+            font-family: $police1;
+            color: $color2;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .UserScore {
+        width: 215px;
+        height: 230px;
+        left: 605px;
+        & > p {
+            font-size: 17px;
+            margin-top: 2.2em;
+            & > span {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .UserScore {
+        width: 254px;
+        height: 260px;
+        left: 699px;
+        & > h4 {
+            font-size: 17px;
+        }
+        & > p {
+            font-size: 18px;
+            margin-top: 2.3em;
+            & > span {
+                font-size: 33px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .UserScore {
+        width: 296px;
+        height: 300px;
+        left: 783px;
+        & > h4 {
+            font-size: 19px;
+        }
+        & > p {
+            font-size: 21px;
+            line-height: 32.5px;
+            margin-top: 2.5em;
+            & > span {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .UserScore {
+        width: 359px;
+        height: 360px;
+        left: 942px;
+        & > h4 {
+            font-size: 23px;
+        }
+        & > p {
+            width: 120px;
+            font-size: 26.5px;
+            line-height: 37px;
+            margin-top: 3em;
+            & > span {
+                font-size: 47px;
+            }
+        }
+    }
+}

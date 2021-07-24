@@ -4,6 +4,7 @@ import useAxios from '../hook/useAxios.jsx';
 import UserActivity from '../smart/UserActivity.jsx';
 import UserSession from '../smart/UserSession.jsx';
 import UserPerform from '../smart/UserPerform.jsx';
+import UserScore from '../smart/UserScore.jsx';
 import PropTypes from 'prop-types';
 import '../../styles/css/pages/Dashboard.css';
 
@@ -26,6 +27,7 @@ const Dashboard = (params) => {
                     <UserActivity />
                     <UserSession />
                     <UserPerform />
+                    <UserScore />
                 </section>
             ) : (
                 <div className="DashboardError">
