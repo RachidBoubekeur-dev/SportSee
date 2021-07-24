@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { IdContext } from '../context/MyContext.jsx';
 import useAxios from '../hook/useAxios.jsx';
 import UserActivity from '../smart/UserActivity.jsx';
+import UserSession from '../smart/UserSession.jsx';
 import PropTypes from 'prop-types';
 import '../../styles/css/pages/Dashboard.css';
 
@@ -22,6 +23,7 @@ const Dashboard = (params) => {
                         Félicitation ! Vous avez explosé vos objectifs hier 👏
                     </p>
                     <UserActivity />
+                    <UserSession />
                 </section>
             ) : (
                 <div className="DashboardError">
