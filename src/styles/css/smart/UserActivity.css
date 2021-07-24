@@ -2,6 +2,7 @@
 .UserActivity {
   position: relative;
   background-color: #fbfbfb;
+  border-radius: 5px;
   width: 62%;
   height: 300px;
   margin-top: 3em;
@@ -78,7 +79,7 @@
   display: none;
 }
 
-.custom-tooltip {
+.custom-tooltipActivity {
   width: 60px;
   height: 50px;
   padding: 1.3em 0 1.3em 0;

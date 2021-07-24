@@ -6,5 +6,5 @@ export default {
 };
 
 export const Default = () => {
-    return <UserActivity userId={'12'} />;
+    return <UserActivity />;
 };

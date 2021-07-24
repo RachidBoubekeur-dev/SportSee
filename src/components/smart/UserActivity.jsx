@@ -2,13 +2,13 @@ import { useContext } from 'react';
 import { IdContext } from '../context/MyContext.jsx';
 import useAxios from '../hook/useAxios';
 import {
+    ResponsiveContainer,
     BarChart,
     Bar,
     XAxis,
     YAxis,
     Tooltip,
     CartesianGrid,
-    ResponsiveContainer,
 } from 'recharts';
 import '../../styles/css/smart/UserActivity.css';
 
@@ -24,10 +24,10 @@ const UserActivity = () => {
         }
     }
 
-    const CustomTooltip = ({ active, payload, label }) => {
+    const CustomTooltip = ({ active, payload }) => {
         if (active) {
             return (
-                <div className="custom-tooltip">
+                <div className="custom-tooltipActivity">
                     <p>{`${payload[0].value}kg`}</p>
                     <p>{`${payload[1].value}Kcal`}</p>
                 </div>
