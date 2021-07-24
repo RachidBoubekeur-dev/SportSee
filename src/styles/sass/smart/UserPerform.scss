@@ -1,0 +1,74 @@
+@import '../utils/variables';
+
+.UserPerform {
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 1.5em;
+    width: 176px;
+    height: 210px;
+    background-color: #282d30;
+    border-radius: 5px;
+    margin-top: 2.35em;
+    margin-bottom: 2.35em;
+    & > .loadingState {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.5em;
+        margin: 0;
+        & > p {
+            font-family: $police1;
+            color: $color2;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}
+.recharts-polar-angle-axis-tick-value {
+    font-size: 5px;
+    fill: $color2;
+}
+.recharts-polar-grid-angle {
+    display: none;
+}
+
+@media screen and (min-width: 1232px) {
+    .UserPerform {
+        width: 215px;
+        height: 230px;
+    }
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 9.2px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .UserPerform {
+        width: 254px;
+        height: 260px;
+    }
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .UserPerform {
+        width: 296px;
+        height: 300px;
+    }
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .UserPerform {
+        width: 359px;
+        height: 360px;
+    }
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 20px;
+    }
+}

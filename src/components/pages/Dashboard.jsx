@@ -3,6 +3,7 @@ import { IdContext } from '../context/MyContext.jsx';
 import useAxios from '../hook/useAxios.jsx';
 import UserActivity from '../smart/UserActivity.jsx';
 import UserSession from '../smart/UserSession.jsx';
+import UserPerform from '../smart/UserPerform.jsx';
 import PropTypes from 'prop-types';
 import '../../styles/css/pages/Dashboard.css';
 
@@ -24,6 +25,7 @@ const Dashboard = (params) => {
                     </p>
                     <UserActivity />
                     <UserSession />
+                    <UserPerform />
                 </section>
             ) : (
                 <div className="DashboardError">
