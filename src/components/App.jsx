@@ -9,6 +9,9 @@ import '../styles/css/App.css';
 
 const App = () => {
     const [loading, setLoading] = useState(true);
+    setTimeout(() => {
+        setLoading(false);
+    }, 3500);
     return (
         <main className="App">
             {loading && (
@@ -24,7 +27,7 @@ const App = () => {
             <Header />
             <NavLeft />
             <IdContext.Provider value={'12'}>
-                <Dashboard setLoading={setLoading} />
+                <Dashboard />
             </IdContext.Provider>
         </main>
     );

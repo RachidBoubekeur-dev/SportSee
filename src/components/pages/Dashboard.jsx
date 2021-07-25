@@ -6,15 +6,11 @@ import UserSession from '../smart/UserSession.jsx';
 import UserPerform from '../smart/UserPerform.jsx';
 import UserScore from '../smart/UserScore.jsx';
 import UserCard from '../smart/UserCard.jsx';
-import PropTypes from 'prop-types';
 import '../../styles/css/pages/Dashboard.css';
 
-const Dashboard = (params) => {
+const Dashboard = () => {
     const userId = useContext(IdContext);
     const userData = useAxios(`user/${userId}`);
-    setTimeout(() => {
-        params.setLoading(false);
-    }, 3500);
     return (
         <div>
             {userData ? (
@@ -49,10 +45,6 @@ const Dashboard = (params) => {
             )}
         </div>
     );
-};
-
-Dashboard.propTypes = {
-    setLoading: PropTypes.func.isRequired,
 };
 
 export default Dashboard;
