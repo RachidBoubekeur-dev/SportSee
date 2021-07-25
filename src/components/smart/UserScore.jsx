@@ -22,10 +22,12 @@ const UserScore = () => {
     return (
         <article className="UserScore">
             <h4>Score</h4>
-            <p>
-                <span>12%</span>
-                <br /> de votre objectif
-            </p>
+            {userScore && (
+                <p>
+                    <span>{`${data[0].uv}%`}</span>
+                    <br /> de votre objectif
+                </p>
+            )}
             {userScore ? (
                 <ResponsiveContainer width="100%" height="100%">
                     <RadialBarChart
