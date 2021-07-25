@@ -5,6 +5,7 @@ import UserActivity from '../smart/UserActivity.jsx';
 import UserSession from '../smart/UserSession.jsx';
 import UserPerform from '../smart/UserPerform.jsx';
 import UserScore from '../smart/UserScore.jsx';
+import UserCard from '../smart/UserCard.jsx';
 import PropTypes from 'prop-types';
 import '../../styles/css/pages/Dashboard.css';
 
@@ -28,6 +29,12 @@ const Dashboard = (params) => {
                     <UserSession />
                     <UserPerform />
                     <UserScore />
+                    <aside>
+                        <UserCard category={0} />
+                        <UserCard category={1} />
+                        <UserCard category={2} />
+                        <UserCard category={3} />
+                    </aside>
                 </section>
             ) : (
                 <div className="DashboardError">

@@ -16,6 +16,11 @@
         margin: 0;
         font-weight: 500;
     }
+    & > aside {
+        position: absolute;
+        top: 209px;
+        right: 0;
+    }
 }
 
 .DashboardError {
