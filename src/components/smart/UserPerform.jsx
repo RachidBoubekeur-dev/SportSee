@@ -34,7 +34,7 @@ const UserPerform = () => {
                 <ResponsiveContainer width="100%" height="100%">
                     <RadarChart
                         innerRadius={12.5}
-                        outerRadius={66}
+                        outerRadius="70%"
                         data={userPerform.data}
                     >
                         <PolarGrid />

@@ -7,7 +7,7 @@
     align-content: space-around;
     align-items: flex-start;
     max-width: 1900px;
-    padding: 67px 0 8em 140px;
+    padding: 67px 0 3em 140px;
     font-family: $police1;
     & > h1 {
         font-size: 30px;
@@ -19,6 +19,7 @@
         width: 100%;
         & > span {
             color: $color3;
+            margin-left: 10px;
         }
     }
     & > p {
@@ -111,7 +112,7 @@
 
 @media screen and (min-width: 1232px) {
     .Dashboard {
-        padding: 70px 0 8em 150px;
+        padding: 70px 0 3em 150px;
         & > h1 {
             font-size: 31px;
             margin-bottom: 19px;
@@ -131,7 +132,7 @@
 
 @media screen and (min-width: 1440px) {
     .Dashboard {
-        padding: 78px 0 8em 166px;
+        padding: 78px 0 4em 166px;
         & > h1 {
             font-size: 35px;
         }
@@ -164,7 +165,7 @@
 
 @media screen and (min-width: 2000px) {
     .Dashboard {
-        padding: 93px 0 8em 200px;
+        padding: 93px 0 6.5em 200px;
         & > h1 {
             font-size: 40px;
         }

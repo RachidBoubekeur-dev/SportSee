@@ -16,7 +16,7 @@ const Dashboard = () => {
             {userData ? (
                 <section className="Dashboard">
                     <h1>
-                        Bonjour <span>{userData.userInfos.firstName}</span>
+                        Bonjour<span>{userData.userInfos.firstName}</span>
                     </h1>
                     <p>
                         Félicitation ! Vous avez explosé vos objectifs hier 👏

@@ -34,11 +34,11 @@ const UserScore = () => {
                         innerRadius="82.5%"
                         outerRadius="107.5%"
                         data={data}
+                        startAngle={555}
+                        endAngle={195}
                     >
                         <RadialBar
-                            radius={10}
                             dataKey="uv"
-                            isAnimationActive={true}
                             animationBegin={3200}
                             animationDuration={1900}
                             background
