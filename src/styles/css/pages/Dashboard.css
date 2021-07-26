@@ -159,6 +159,8 @@
 }
 @media screen and (min-width: 2000px) {
   .Dashboard {
+    margin-left: auto;
+    margin-right: auto;
     padding: 93px 0 6.5em 200px;
   }
   .Dashboard > h1 {

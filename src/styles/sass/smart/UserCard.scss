@@ -14,19 +14,20 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding: 0 1em 0 1em;
         & > img {
             width: 60px;
             height: 60px;
-            margin-right: 1em;
         }
         & > p {
             font-size: 20px;
             font-style: normal;
             font-weight: 700;
             line-height: 24px;
+            animation: card 2s;
+            animation-delay: 2.4s;
             & > span {
                 font-size: 14px;
                 font-weight: 500;
@@ -47,21 +48,29 @@
     }
 }
 
+@keyframes card {
+    from {
+        opacity: 0;
+        margin-left: 1em;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
 @media screen and (min-width: 1232px) {
     .UserCard {
         width: 258px;
         height: 124px;
         & > .dataKey {
-            justify-content: space-evenly;
-            padding: 0 2em 0 1.5em;
+            padding: 0 2em 0 2em;
         }
     }
 }
 
 @media screen and (min-width: 1440px) {
     .UserCard > .dataKey {
-        justify-content: space-evenly;
-        padding: 0 2em 0 1.5em;
         & > img {
             width: 70px;
             height: 70px;
@@ -85,9 +94,9 @@
                 height: 80px;
             }
             & > p {
-                font-size: 24px;
+                font-size: 25px;
                 & > span {
-                    font-size: 18px;
+                    font-size: 19px;
                 }
             }
         }

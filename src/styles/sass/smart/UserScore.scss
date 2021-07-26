@@ -26,6 +26,8 @@
         text-align: center;
         color: #3535359f;
         margin-top: 2em;
+        animation: score 4.5s;
+        animation-delay: 2.2s;
         & > span {
             font-size: 26px;
             font-weight: 700;
@@ -44,6 +46,15 @@
             font-weight: 500;
             margin: 0;
         }
+    }
+}
+
+@keyframes score {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
