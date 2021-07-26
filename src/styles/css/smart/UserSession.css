@@ -2,12 +2,10 @@
 .UserSession {
   display: inline-block;
   position: relative;
-  width: 176px;
-  height: 210px;
+  width: 30%;
+  max-width: 360px;
   background-color: #ff0000;
   border-radius: 5px;
-  margin-top: 2.35em;
-  margin-bottom: 2.35em;
 }
 .UserSession > h4 {
   position: absolute;
@@ -68,10 +66,6 @@
 }
 
 @media screen and (min-width: 1232px) {
-  .UserSession {
-    width: 215px;
-    height: 230px;
-  }
   .UserSession > h4 {
     left: 1.5em;
     font-size: 15px;
@@ -79,20 +73,12 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .UserSession {
-    width: 254px;
-    height: 260px;
-  }
   .UserSession > h4 {
     left: 2em;
     line-height: 24px;
   }
 }
 @media screen and (min-width: 1650px) {
-  .UserSession {
-    width: 296px;
-    height: 300px;
-  }
   .UserSession > h4 {
     width: 170px;
     font-size: 17px;
@@ -100,10 +86,6 @@
   }
 }
 @media screen and (min-width: 2000px) {
-  .UserSession {
-    width: 359px;
-    height: 360px;
-  }
   .UserSession > h4 {
     width: 241px;
     top: -0.3em;

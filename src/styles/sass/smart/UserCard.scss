@@ -9,9 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2.25em;
-    margin-right: 2em;
-    margin-left: 1em;
+    margin-left: 2em;
     & > .dataKey {
         width: 100%;
         display: flex;
@@ -53,10 +51,6 @@
     .UserCard {
         width: 258px;
         height: 124px;
-        margin-bottom: 2.39em;
-        margin-right: 3em;
-        margin-left: 1em;
-        margin-top: 0.45em;
         & > .dataKey {
             justify-content: space-evenly;
             padding: 0 2em 0 1.5em;
@@ -64,29 +58,18 @@
     }
 }
 
-@media screen and (min-width: 1358px) {
-    .UserCard {
-        margin-right: 5.5em;
-    }
-}
-
 @media screen and (min-width: 1440px) {
-    .UserCard {
-        margin-bottom: 3.47em;
-        margin-right: 7.5em;
-        margin-top: 1.55em;
-        & > .dataKey {
-            justify-content: space-evenly;
-            padding: 0 2em 0 1.5em;
-            & > img {
-                width: 70px;
-                height: 70px;
-            }
-            & > p {
-                font-size: 22px;
-                & > span {
-                    font-size: 16px;
-                }
+    .UserCard > .dataKey {
+        justify-content: space-evenly;
+        padding: 0 2em 0 1.5em;
+        & > img {
+            width: 70px;
+            height: 70px;
+        }
+        & > p {
+            font-size: 22px;
+            & > span {
+                font-size: 16px;
             }
         }
     }
@@ -96,8 +79,6 @@
     .UserCard {
         width: 300px;
         height: 139.5px;
-        margin-bottom: 3em;
-        margin-right: 8em;
         & > .dataKey {
             & > img {
                 width: 80px;
@@ -117,9 +98,6 @@
     .UserCard {
         width: 370px;
         height: 166px;
-        margin-bottom: 3em;
-        margin-top: 3.3em;
-        margin-right: 9.5em;
         & > .dataKey {
             & > img {
                 width: 100px;

@@ -1,25 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 .UserScore {
   display: inline-flex;
-  position: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
-  left: 516px;
-  margin-left: 1.5em;
-  width: 176px;
-  height: 210px;
+  width: 30%;
+  max-width: 360px;
   background-color: #fbfbfb;
   border-radius: 5px;
-  margin-top: 2.35em;
-  margin-bottom: 2.35em;
 }
 .UserScore > h4 {
-  font-size: 15px;
-  line-height: 9px;
+  font-size: 14px;
+  line-height: 0;
   font-weight: 500;
   position: absolute;
   top: 0;
-  left: 14px;
+  left: 10.5px;
 }
 .UserScore > p {
   font-size: 16px;
@@ -51,10 +47,8 @@
 }
 
 @media screen and (min-width: 1232px) {
-  .UserScore {
-    width: 215px;
-    height: 230px;
-    left: 605px;
+  .UserScore > h4 {
+    font-size: 15.5px;
   }
   .UserScore > p {
     font-size: 17px;
@@ -65,13 +59,10 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .UserScore {
-    width: 254px;
-    height: 260px;
-    left: 699px;
-  }
   .UserScore > h4 {
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 5px;
+    left: 13px;
   }
   .UserScore > p {
     font-size: 18px;
@@ -82,13 +73,9 @@
   }
 }
 @media screen and (min-width: 1650px) {
-  .UserScore {
-    width: 296px;
-    height: 300px;
-    left: 783px;
-  }
   .UserScore > h4 {
-    font-size: 19px;
+    font-size: 20px;
+    left: 15px;
   }
   .UserScore > p {
     font-size: 21px;
@@ -100,13 +87,9 @@
   }
 }
 @media screen and (min-width: 2000px) {
-  .UserScore {
-    width: 359px;
-    height: 360px;
-    left: 942px;
-  }
   .UserScore > h4 {
-    font-size: 23px;
+    font-size: 25px;
+    left: 17px;
   }
   .UserScore > p {
     width: 120px;

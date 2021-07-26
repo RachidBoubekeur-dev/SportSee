@@ -22,15 +22,17 @@ const Dashboard = () => {
                         Félicitation ! Vous avez explosé vos objectifs hier 👏
                     </p>
                     <UserActivity />
-                    <UserSession />
-                    <UserPerform />
-                    <UserScore />
                     <aside>
                         <UserCard category={0} />
                         <UserCard category={1} />
                         <UserCard category={2} />
                         <UserCard category={3} />
                     </aside>
+                    <div>
+                        <UserSession />
+                        <UserPerform />
+                        <UserScore />
+                    </div>
                 </section>
             ) : (
                 <div className="DashboardError">

@@ -1,12 +1,22 @@
 @import '../utils/variables';
 
 .Dashboard {
-    padding-left: 140px;
-    padding-top: 67px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
+    max-width: 1900px;
+    padding: 67px 0 8em 140px;
     font-family: $police1;
     & > h1 {
         font-size: 30px;
         margin-bottom: 17px;
+        display: inline-flex;
+        align-content: flex-end;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
         & > span {
             color: $color3;
         }
@@ -15,11 +25,28 @@
         font-size: 11.5px;
         margin: 0;
         font-weight: 500;
+        display: inline-flex;
+        align-content: flex-end;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
     }
     & > aside {
+        margin-top: 3em;
+        height: 563px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    & > div {
         position: absolute;
-        top: 209px;
-        right: 0;
+        margin-top: 31em;
+        width: 60%;
+        max-width: 1240px;
+        height: 210px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -84,8 +111,7 @@
 
 @media screen and (min-width: 1232px) {
     .Dashboard {
-        padding-left: 150px;
-        padding-top: 70px;
+        padding: 70px 0 8em 150px;
         & > h1 {
             font-size: 31px;
             margin-bottom: 19px;
@@ -93,31 +119,65 @@
         & > p {
             font-size: 12px;
         }
+        & > aside {
+            height: 608px;
+        }
+        & > div {
+            height: 230px;
+            margin-top: 32.75em;
+        }
     }
 }
 
 @media screen and (min-width: 1440px) {
     .Dashboard {
-        padding-left: 166px;
-        padding-top: 78px;
+        padding: 78px 0 8em 166px;
         & > h1 {
             font-size: 35px;
         }
         & > p {
             font-size: 13.5px;
         }
+        & > aside {
+            height: 680px;
+        }
+        & > div {
+            width: 59.35%;
+            height: 275px;
+            margin-top: 35em;
+        }
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .Dashboard {
+        & > aside {
+            height: 715px;
+        }
+        & > div {
+            width: 59.35%;
+            margin-top: 35em;
+            height: 310px;
+        }
     }
 }
 
 @media screen and (min-width: 2000px) {
     .Dashboard {
-        padding-left: 200px;
-        padding-top: 93px;
+        padding: 93px 0 8em 200px;
         & > h1 {
             font-size: 40px;
         }
         & > p {
             font-size: 16px;
+        }
+        & > aside {
+            height: 846px;
+        }
+        & > div {
+            width: 59%;
+            height: 370px;
+            margin-top: 40.5em;
         }
     }
 }

@@ -110,6 +110,15 @@
   .UserActivity {
     height: 400px;
   }
+  .UserActivity > h4 {
+    font-size: 17px;
+  }
+  .UserActivity > ul {
+    font-size: 16px;
+  }
+  .UserActivity > ul > li::before {
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=UserActivity.css.map */
