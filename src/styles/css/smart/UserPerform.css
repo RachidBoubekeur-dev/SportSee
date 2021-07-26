@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 .UserPerform {
   display: inline-flex;
+  position: relative;
   justify-content: center;
   width: 30%;
   max-width: 360px;
