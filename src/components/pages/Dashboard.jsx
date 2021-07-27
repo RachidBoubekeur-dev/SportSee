@@ -6,6 +6,7 @@ import UserSession from '../smart/UserSession.jsx';
 import UserPerform from '../smart/UserPerform.jsx';
 import UserScore from '../smart/UserScore.jsx';
 import UserCard from '../smart/UserCard.jsx';
+import iconError from '../../assets/iconError.png';
 import '../../styles/css/pages/Dashboard.css';
 
 const Dashboard = () => {
@@ -36,13 +37,8 @@ const Dashboard = () => {
                 </section>
             ) : (
                 <div className="DashboardError">
-                    <span>👀</span>
-                    <span>👃🏻</span>
-                    <span>👅</span>
-                    <span>🦿</span>
-                    <span>🦿</span>
-                    <span>🦾</span>
-                    <span>🦾</span>
+                    <img src={iconError} alt="Erreur" />
+                    <p>Server disconnect</p>
                 </div>
             )}
         </div>
