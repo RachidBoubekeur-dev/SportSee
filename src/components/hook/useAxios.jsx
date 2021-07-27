@@ -11,7 +11,10 @@ const useAxios = (url) => {
     const [data, setData] = useState(undefined);
     useEffect(() => {
         (async () => {
-            const response = await axios.get(`http://localhost:3000/${url}`);
+            const response = await axios.get(
+                // eslint-disable-line no-eval
+                `http://${window.location.hostname}:3000/${url}`
+            );
             if (response.status === 200) setData(response.data.data);
         })();
     }, [url]);

@@ -24,10 +24,9 @@ const Dashboard = () => {
                     </p>
                     <UserActivity />
                     <aside>
-                        <UserCard category={0} />
-                        <UserCard category={1} />
-                        <UserCard category={2} />
-                        <UserCard category={3} />
+                        {[0, 1, 2, 3].map((i) => (
+                            <UserCard key={i} category={i} />
+                        ))}
                     </aside>
                     <div>
                         <UserSession />
