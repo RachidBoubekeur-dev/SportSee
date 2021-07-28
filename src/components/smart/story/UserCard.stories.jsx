@@ -11,7 +11,7 @@ export default {
                 Cecilia: '18',
             },
             defaultValue: '12',
-            description: 'Default username on SportSee',
+            description: 'Default user on SportSee',
             control: { type: 'radio' },
         },
         category: {
