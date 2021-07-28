@@ -4,6 +4,10 @@ import useAxios from '../hook/useAxios';
 import { ResponsiveContainer, RadialBarChart, RadialBar } from 'recharts';
 import '../../styles/css/smart/UserScore.css';
 
+/**
+ * ### Smart component
+ * ##### UserScore gives today's score for the user.
+ */
 const UserScore = () => {
     const userId = useContext(IdContext);
     const userScore = useAxios(`user/${userId}`);
