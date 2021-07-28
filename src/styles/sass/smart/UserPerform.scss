@@ -1,0 +1,50 @@
+@import '../utils/variables';
+
+.UserPerform {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    width: 30%;
+    max-width: 360px;
+    background-color: #282d30;
+    font-family: $police1;
+    border-radius: 5px;
+    & > .loadingState {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.5em;
+        margin: 0;
+        & > p {
+            font-family: $police1;
+            color: $color2;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}
+.recharts-polar-angle-axis-tick-value {
+    font-size: 10px;
+    fill: $color2;
+}
+.recharts-polar-grid-angle {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .recharts-polar-angle-axis-tick-value {
+        font-size: 20px;
+    }
+}

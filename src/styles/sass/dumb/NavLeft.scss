@@ -1,0 +1,80 @@
+@import '../utils/variables';
+
+.NavLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $police1;
+    color: $color2;
+    background: $color1;
+    position: fixed;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    & > nav {
+        margin-top: auto;
+        margin-bottom: auto;
+        & > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            & > li {
+                cursor: pointer;
+                margin-bottom: 25%;
+                transition: all 0.55s;
+                & > img {
+                    width: 37px;
+                    border-radius: 2px;
+                }
+                &:hover,
+                &:active,
+                &:focus {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+    & > p {
+        font-size: 8.5px;
+        transform: rotate(270deg);
+        width: max-content;
+        position: absolute;
+        bottom: 9em;
+    }
+}
+
+@media screen and (min-width: 1232px) {
+    .NavLeft {
+        width: 80px;
+        & > nav > ul > li > img {
+            width: 45px;
+        }
+        & > p {
+            font-size: 9px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .NavLeft {
+        width: 90px;
+        & > nav > ul > li > img {
+            width: 53px;
+        }
+        & > p {
+            font-size: 9.5px;
+        }
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .NavLeft {
+        width: 110px;
+        & > nav > ul > li > img {
+            width: 64px;
+        }
+        & > p {
+            font-size: 13px;
+        }
+    }
+}

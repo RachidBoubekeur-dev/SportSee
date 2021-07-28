@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.Dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: flex-start;
+  max-width: 1900px;
+  padding: 67px 0 3em 140px;
+  font-family: "Roboto";
+}
+.Dashboard > h1 {
+  font-size: 30px;
+  margin-bottom: 17px;
+  display: inline-flex;
+  align-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+.Dashboard > h1 > span {
+  color: #e60000;
+  margin-left: 10px;
+}
+.Dashboard > p {
+  font-size: 11.5px;
+  margin: 0;
+  font-weight: 500;
+  display: inline-flex;
+  align-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+.Dashboard > aside {
+  margin-top: 3em;
+  height: 563px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Dashboard > div {
+  position: absolute;
+  margin-top: 31em;
+  width: 60%;
+  max-width: 1240px;
+  height: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.DashboardError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/error.png");
+  z-index: 1;
+}
+.DashboardError > p {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  background: #e15c64;
+  border: 5px solid #323232;
+  border-radius: 6.5px;
+  padding: 0.7em;
+  margin-top: -0.5em;
+}
+
+@media screen and (min-width: 1232px) {
+  .Dashboard {
+    padding: 70px 0 3em 150px;
+  }
+  .Dashboard > h1 {
+    font-size: 31px;
+    margin-bottom: 19px;
+  }
+  .Dashboard > p {
+    font-size: 12px;
+  }
+  .Dashboard > aside {
+    height: 608px;
+  }
+  .Dashboard > div {
+    height: 230px;
+    margin-top: 32.75em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Dashboard {
+    padding: 78px 0 4em 166px;
+  }
+  .Dashboard > h1 {
+    font-size: 35px;
+  }
+  .Dashboard > p {
+    font-size: 13.5px;
+  }
+  .Dashboard > aside {
+    height: 680px;
+  }
+  .Dashboard > div {
+    width: 59.35%;
+    height: 275px;
+    margin-top: 35em;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .Dashboard > aside {
+    height: 715px;
+  }
+  .Dashboard > div {
+    width: 59.35%;
+    margin-top: 35em;
+    height: 310px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .Dashboard {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 93px 0 6.5em 200px;
+  }
+  .Dashboard > h1 {
+    font-size: 40px;
+  }
+  .Dashboard > p {
+    font-size: 16px;
+  }
+  .Dashboard > aside {
+    height: 846px;
+  }
+  .Dashboard > div {
+    width: 59%;
+    height: 370px;
+    margin-top: 40.5em;
+  }
+}
+
+/*# sourceMappingURL=Dashboard.css.map */

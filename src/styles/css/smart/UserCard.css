@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.UserCard {
+  position: relative;
+  background-color: #fbfbfb;
+  font-family: "Roboto";
+  border-radius: 5px;
+  width: 208px;
+  height: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2em;
+}
+.UserCard > .dataKey {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1em 0 1em;
+}
+.UserCard > .dataKey > img {
+  width: 60px;
+  height: 60px;
+}
+.UserCard > .dataKey > p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  animation: card 2s;
+  animation-delay: 2.4s;
+}
+.UserCard > .dataKey > p > span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #74798c;
+}
+.UserCard > .loadingState {
+  position: absolute;
+  bottom: -0.5em;
+  right: 0.5em;
+  margin: 0;
+}
+.UserCard > .loadingState > p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes card {
+  from {
+    opacity: 0;
+    margin-left: 1em;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1232px) {
+  .UserCard {
+    width: 258px;
+    height: 124px;
+  }
+  .UserCard > .dataKey {
+    padding: 0 2em 0 2em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .UserCard > .dataKey > img {
+    width: 70px;
+    height: 70px;
+  }
+  .UserCard > .dataKey > p {
+    font-size: 22px;
+  }
+  .UserCard > .dataKey > p > span {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .UserCard {
+    width: 300px;
+    height: 139.5px;
+  }
+  .UserCard > .dataKey > img {
+    width: 80px;
+    height: 80px;
+  }
+  .UserCard > .dataKey > p {
+    font-size: 25px;
+  }
+  .UserCard > .dataKey > p > span {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .UserCard {
+    width: 370px;
+    height: 166px;
+  }
+  .UserCard > .dataKey > img {
+    width: 100px;
+    height: 100px;
+  }
+  .UserCard > .dataKey > p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .UserCard > .dataKey > p > span {
+    font-size: 22px;
+  }
+}
+
+/*# sourceMappingURL=UserCard.css.map */

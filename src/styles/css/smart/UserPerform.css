@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.UserPerform {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  width: 30%;
+  max-width: 360px;
+  background-color: #282d30;
+  font-family: "Roboto";
+  border-radius: 5px;
+}
+.UserPerform > .loadingState {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  margin: 0;
+}
+.UserPerform > .loadingState > p {
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.recharts-polar-angle-axis-tick-value {
+  font-size: 10px;
+  fill: #ffffff;
+}
+
+.recharts-polar-grid-angle {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .recharts-polar-angle-axis-tick-value {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .recharts-polar-angle-axis-tick-value {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .recharts-polar-angle-axis-tick-value {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=UserPerform.css.map */

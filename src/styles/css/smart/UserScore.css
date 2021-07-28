@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+.UserScore {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  max-width: 360px;
+  background-color: #fbfbfb;
+  font-family: "Roboto";
+  border-radius: 5px;
+}
+.UserScore > h4 {
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 10.5px;
+}
+.UserScore > p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  position: absolute;
+  width: 81px;
+  text-align: center;
+  color: #3535359f;
+  margin-top: 2em;
+  animation: score 10s;
+}
+.UserScore > p > span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.UserScore > .loadingState {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  margin: 0;
+}
+.UserScore > .loadingState > p {
+  font-family: "Roboto";
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@keyframes score {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1232px) {
+  .UserScore > h4 {
+    font-size: 15.5px;
+  }
+  .UserScore > p {
+    font-size: 17px;
+    margin-top: 2.2em;
+  }
+  .UserScore > p > span {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .UserScore > h4 {
+    font-size: 18px;
+    line-height: 5px;
+    left: 13px;
+  }
+  .UserScore > p {
+    font-size: 18px;
+    margin-top: 2.3em;
+  }
+  .UserScore > p > span {
+    font-size: 33px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .UserScore > h4 {
+    font-size: 20px;
+    left: 15px;
+  }
+  .UserScore > p {
+    font-size: 21px;
+    line-height: 32.5px;
+    margin-top: 2.5em;
+  }
+  .UserScore > p > span {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .UserScore > h4 {
+    font-size: 25px;
+    left: 17px;
+  }
+  .UserScore > p {
+    width: 120px;
+    font-size: 26.5px;
+    line-height: 37px;
+    margin-top: 3em;
+  }
+  .UserScore > p > span {
+    font-size: 47px;
+  }
+}
+
+/*# sourceMappingURL=UserScore.css.map */
