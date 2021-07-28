@@ -1,3 +1,4 @@
+import { IdContext } from '../../context/MyContext.jsx';
 import Dashboard from '../Dashboard';
 
 export default {
@@ -6,5 +7,9 @@ export default {
 };
 
 export const Default = () => {
-    return <Dashboard />;
+    return (
+        <IdContext.Provider value={'18'}>
+            <Dashboard />
+        </IdContext.Provider>
+    );
 };

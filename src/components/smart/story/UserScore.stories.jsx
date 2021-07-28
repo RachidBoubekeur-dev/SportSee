@@ -1,3 +1,4 @@
+import { IdContext } from '../../context/MyContext.jsx';
 import UserScore from '../UserScore';
 
 export default {
@@ -6,5 +7,16 @@ export default {
 };
 
 export const Default = () => {
-    return <UserScore />;
+    const divStyle = {
+        display: 'flex',
+        width: '60%',
+        height: '210px',
+    };
+    return (
+        <div style={divStyle}>
+            <IdContext.Provider value={'18'}>
+                <UserScore />
+            </IdContext.Provider>
+        </div>
+    );
 };

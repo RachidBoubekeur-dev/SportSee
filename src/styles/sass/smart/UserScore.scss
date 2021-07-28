@@ -8,6 +8,7 @@
     width: 30%;
     max-width: 360px;
     background-color: #fbfbfb;
+    font-family: $police1;
     border-radius: 5px;
     & > h4 {
         font-size: 14px;
@@ -26,8 +27,7 @@
         text-align: center;
         color: #3535359f;
         margin-top: 2em;
-        animation: score 4.5s;
-        animation-delay: 2.2s;
+        animation: score 10s;
         & > span {
             font-size: 26px;
             font-weight: 700;

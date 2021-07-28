@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import { IdContext } from '../context/MyContext';
 import useAxios from '../hook/useAxios';
-import '../../styles/css/smart/UserCard.css';
 import iconCalories from '../../assets/iconCalories.png';
 import iconProteines from '../../assets/iconProteines.png';
 import iconGlucides from '../../assets/iconGlucides.png';
 import iconLipides from '../../assets/iconLipides.png';
 import PropTypes from 'prop-types';
+import '../../styles/css/smart/UserCard.css';
 
 const UserCard = (params) => {
     const userId = useContext(IdContext);

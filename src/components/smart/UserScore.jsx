@@ -37,7 +37,12 @@ const UserScore = () => {
                         startAngle={555}
                         endAngle={195}
                     >
-                        <RadialBar dataKey="uv" background />
+                        <RadialBar
+                            dataKey="uv"
+                            background
+                            animationBegin={3200}
+                            animationDuration={1900}
+                        />
                     </RadialBarChart>
                 </ResponsiveContainer>
             ) : (

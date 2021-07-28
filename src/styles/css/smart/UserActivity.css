@@ -2,6 +2,7 @@
 .UserActivity {
   position: relative;
   background-color: #fbfbfb;
+  font-family: "Roboto";
   border-radius: 5px;
   width: 62%;
   height: 300px;

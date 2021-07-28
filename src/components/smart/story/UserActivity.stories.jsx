@@ -1,3 +1,4 @@
+import { IdContext } from '../../context/MyContext.jsx';
 import UserActivity from '../UserActivity';
 
 export default {
@@ -6,5 +7,9 @@ export default {
 };
 
 export const Default = () => {
-    return <UserActivity />;
+    return (
+        <IdContext.Provider value={'18'}>
+            <UserActivity />
+        </IdContext.Provider>
+    );
 };

@@ -1,3 +1,4 @@
+import { IdContext } from '../../context/MyContext.jsx';
 import UserPerform from '../UserPerform';
 
 export default {
@@ -6,5 +7,16 @@ export default {
 };
 
 export const Default = () => {
-    return <UserPerform />;
+    const divStyle = {
+        display: 'flex',
+        width: '60%',
+        height: '210px',
+    };
+    return (
+        <div style={divStyle}>
+            <IdContext.Provider value={'18'}>
+                <UserPerform />
+            </IdContext.Provider>
+        </div>
+    );
 };
