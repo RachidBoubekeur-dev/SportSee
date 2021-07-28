@@ -4,6 +4,9 @@ import icon2 from '../../assets/icon2.png';
 import icon3 from '../../assets/icon3.png';
 import icon4 from '../../assets/icon4.png';
 
+/**
+ * ### Dumb component
+ */
 const NavLeft = () => {
     return (
         <aside className="NavLeft">

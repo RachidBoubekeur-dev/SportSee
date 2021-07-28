@@ -6,5 +6,12 @@ export default {
 };
 
 export const Default = () => {
-    return <NavLeft />;
+    const divStyle = {
+        marginTop: '-1em',
+    };
+    return (
+        <div style={divStyle}>
+            <NavLeft />
+        </div>
+    );
 };
