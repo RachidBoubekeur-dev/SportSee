@@ -24,7 +24,7 @@
 }
 
 .recharts-polar-angle-axis-tick-value {
-  font-size: 5px;
+  font-size: 10px;
   fill: #ffffff;
 }
 
@@ -32,11 +32,6 @@
   display: none;
 }
 
-@media screen and (min-width: 1232px) {
-  .recharts-polar-angle-axis-tick-value {
-    font-size: 10px;
-  }
-}
 @media screen and (min-width: 1440px) {
   .recharts-polar-angle-axis-tick-value {
     font-size: 13px;

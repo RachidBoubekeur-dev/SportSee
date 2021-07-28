@@ -24,17 +24,11 @@
     }
 }
 .recharts-polar-angle-axis-tick-value {
-    font-size: 5px;
+    font-size: 10px;
     fill: $color2;
 }
 .recharts-polar-grid-angle {
     display: none;
-}
-
-@media screen and (min-width: 1232px) {
-    .recharts-polar-angle-axis-tick-value {
-        font-size: 10px;
-    }
 }
 
 @media screen and (min-width: 1440px) {

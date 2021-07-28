@@ -4,17 +4,29 @@ import UserPerform from '../UserPerform';
 export default {
     title: 'smart/UserPerform',
     component: UserPerform,
+    argTypes: {
+        user: {
+            options: {
+                Karl: '12',
+                Cecilia: '18',
+            },
+            defaultValue: '12',
+            description: 'Default username on SportSee',
+            control: { type: 'radio' },
+        },
+    },
 };
 
-export const Default = () => {
+export const Perform = ({ user }) => {
     const divStyle = {
         display: 'flex',
-        width: '60%',
-        height: '210px',
+        width: '100%',
+        maxWidth: '1000px',
+        height: '270px',
     };
     return (
         <div style={divStyle}>
-            <IdContext.Provider value={'18'}>
+            <IdContext.Provider value={user}>
                 <UserPerform />
             </IdContext.Provider>
         </div>
