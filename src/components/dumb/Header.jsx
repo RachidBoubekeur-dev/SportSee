@@ -1,6 +1,9 @@
 import '../../styles/css/dumb/Header.css';
 import logo from '../../assets/logo2.png';
 
+/**
+ * ### Dumb component
+ */
 const Header = () => {
     return (
         <header>

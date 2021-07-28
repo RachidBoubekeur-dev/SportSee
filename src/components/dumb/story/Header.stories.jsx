@@ -6,5 +6,12 @@ export default {
 };
 
 export const Default = () => {
-    return <Header />;
+    const divStyle = {
+        position: 'relative',
+    };
+    return (
+        <div style={divStyle}>
+            <Header />
+        </div>
+    );
 };
