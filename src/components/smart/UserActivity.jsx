@@ -12,10 +12,15 @@ import {
 } from 'recharts';
 import '../../styles/css/smart/UserActivity.css';
 
+/**
+ * ### Smart component
+ * ##### UserActivity that gives us information about the user's weight and calories burned.
+ */
 const UserActivity = () => {
     const userId = useContext(IdContext);
     const userActivity = useAxios(`user/${userId}/activity`);
     if (userActivity) {
+        // Formatting days
         for (let i = 0; i < userActivity.sessions.length; i++) {
             const day = userActivity.sessions[i].day.toString();
             if (day.charAt(0) === '0')
