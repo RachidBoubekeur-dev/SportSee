@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# SportSee
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. General information
 
-## Available Scripts
+SportSee is the OpenClassrooms 12 project for training front-end developers.
+The project is to create a new version of the user's profile page.
+This page will allow the user in particular to follow the number of sessions performed as well as the number of calories burned.
 
-In the project directory, you can run:
+## 2. Project
 
-### `npm start`
+### 2.1 Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   [Create React App](https://create-react-app.dev)
+-   [NodeJS](https://nodejs.org/en/) where [Docker Desktop](https://www.docker.com/products/docker-desktop)
+-   [Yarn](https://yarnpkg.com/)
+-   [Axios](https://axios-http.com/)
+-   [PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html)
+-   and [coffee](https://en.wikipedia.org/wiki/Coffee) ☕...
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*   NodeJS: If you are working with several versions of NodeJS, I recommend you install nvm. This tool will allow you to easily manage your NodeJS versions.
 
-### `npm test`
+### 2.2 Launching the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the repository.
 
-### `npm run build`
+2. Clone it on your computer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. In the main folder to install:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - [Create React App](https://create-react-app.dev) with `npx create-react-app my-app` where `npm init react-app my-app` or `yarn create react-app my-app`.
+    - [Axios](https://axios-http.com/) with `npm i axios` where `yarn add axios`.
+    - [PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html) with `npm i prop-types` where `yarn add prop-types`.
+    - execude `npm start`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. In the API folder to install:
 
-### `npm run eject`
+    1. Project (without Docker)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+        - [NodeJS](https://nodejs.org/en/).
+        - [Yarn](https://yarnpkg.com/) avec `npm install -g yarn`.
+        - The `yarn` command will allow you to install the dependencies.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    2. Project (with Docker)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+        1. With Docker Desktop
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+            - [Docker Desktop](https://www.docker.com/products/docker-desktop).
+            - The `docker image build --no-cache -t micro-api .` command will allow you to build your image.
+            - The `docker container run --name micro-api -p 3000:3000 -dt micro-api yarn` command will allow you to create your Docker container and run your image on port 3000.
+            - The `docker container stop micro-api` command will allow you to stop your micro-api.
+            - The `docker container rm micro-api` command will allow you to delete your micro-api container
 
-## Learn More
+        2. With Vscode and container remotes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+            Finally, if you have VsCode, you can easily launch your project in a docker environment.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+            You will need the [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). Once you have this extension installed, just click on the `Reopen in Container` button.
 
-### Code Splitting
+            Once in the container, run the `yarn dev` command.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2.3 Optional
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. This project uses [Storybook](https://storybook.js.org/) and [Sass](https://sass-lang.com/) if you want to use them, you just need to install:
+    - [Storybook](https://storybook.js.org/) with `npx sb init`.
+    - Once install `npm run storybook`.
+    - [Sass](https://sass-lang.com/) with `npm i sass`.
