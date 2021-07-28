@@ -8,7 +8,12 @@ import iconLipides from '../../assets/iconLipides.png';
 import PropTypes from 'prop-types';
 import '../../styles/css/smart/UserCard.css';
 
-const UserCard = (params) => {
+/**
+ * ### Smart component
+ * ##### UserCard that gives us the information on the user's calories, proteins, carbohydrates and fats for the day.
+ * ###### `@param {Int} category` 0 = calories, 1 = protein, 2 = carbohydrates and 3 = fat.
+ */
+const UserCard = (params = 0) => {
     const userId = useContext(IdContext);
     const userCard = useAxios(`user/${userId}`);
     const i = params.category;
@@ -76,6 +81,10 @@ const UserCard = (params) => {
 
 UserCard.propTypes = {
     category: PropTypes.number.isRequired,
+};
+
+UserCard.defaultProps = {
+    category: 0,
 };
 
 export default UserCard;
