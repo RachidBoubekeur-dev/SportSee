@@ -9,6 +9,10 @@ import UserCard from '../smart/UserCard.jsx';
 import iconError from '../../assets/iconError.png';
 import '../../styles/css/pages/Dashboard.css';
 
+/**
+ * ### Pages component
+ * ##### Dashboard displays all smart components
+ */
 const Dashboard = () => {
     const userId = useContext(IdContext);
     const userData = useAxios(`user/${userId}`);
