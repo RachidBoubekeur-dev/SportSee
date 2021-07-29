@@ -15,6 +15,7 @@ This page will allow the user in particular to follow the number of sessions per
 -   [Yarn](https://yarnpkg.com/)
 -   [Axios](https://axios-http.com/)
 -   [PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html)
+-   [Recharts](https://recharts.org/en-US)
 -   and [coffee](https://en.wikipedia.org/wiki/Coffee) ☕...
 
 *   NodeJS: If you are working with several versions of NodeJS, I recommend you install nvm. This tool will allow you to easily manage your NodeJS versions.
@@ -30,6 +31,7 @@ This page will allow the user in particular to follow the number of sessions per
     - [Create React App](https://create-react-app.dev) with `npx create-react-app my-app` where `npm init react-app my-app` or `yarn create react-app my-app`.
     - [Axios](https://axios-http.com/) with `npm i axios` where `yarn add axios`.
     - [PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html) with `npm i prop-types` where `yarn add prop-types`.
+    - [Recharts](https://recharts.org/en-US/guide) with `npm i recharts` where `yarn add recharts`.
     - execude `npm start`.
 
 4. In the API folder to install:
