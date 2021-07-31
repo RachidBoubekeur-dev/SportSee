@@ -8,7 +8,7 @@ This page will allow the user in particular to follow the number of sessions per
 
 ## 2. Project
 
-### 2.1 Prerequisites
+### 2.1 This project uses:
 
 -   [Create React App](https://create-react-app.dev)
 -   [NodeJS](https://nodejs.org/en/) where [Docker Desktop](https://www.docker.com/products/docker-desktop)
@@ -16,31 +16,20 @@ This page will allow the user in particular to follow the number of sessions per
 -   [Axios](https://axios-http.com/)
 -   [PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html)
 -   [Recharts](https://recharts.org/en-US)
--   and [coffee](https://en.wikipedia.org/wiki/Coffee) ☕...
-
-*   NodeJS: If you are working with several versions of NodeJS, I recommend you install nvm. This tool will allow you to easily manage your NodeJS versions.
+-   [Storybook](https://storybook.js.org/)
+-   [Sass](https://sass-lang.com/)
 
 ### 2.2 Launching the project
 
-1. Fork the repository.
+1. To start, you will need to `git clone` the project on your machine via a command in your terminal: `git clone https://github.com/RachidBoubekeur-dev/RachidBoubekeur_DA12_12072021.git`.
 
-2. Clone it on your computer.
+2. Still in your terminal, go to the newly created folder RachidBoubekeur_DA12_12072021.
 
-3. In the main folder to install:
+3. In this folder, install the packages necessary for the proper functioning of the project via the `npm install` command.
 
-    - [Create React App](https://create-react-app.dev) with `npx create-react-app my-app` where `npm init react-app my-app` or `yarn create react-app my-app`.
-    - [Axios](https://axios-http.com/) with `npm i axios` where `yarn add axios`.
-    - [PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html) with `npm i prop-types` where `yarn add prop-types`.
-    - [Recharts](https://recharts.org/en-US/guide) with `npm i recharts` where `yarn add recharts`.
-    - execude `npm start`.
+4. In the API folder, install the packages necessary for the proper functioning of the project via the `npm install` command.
 
-4. In the API folder to install:
-
-    1. Project (without Docker)
-
-        - [NodeJS](https://nodejs.org/en/).
-        - [Yarn](https://yarnpkg.com/) avec `npm install -g yarn`.
-        - The `yarn` command will allow you to install the dependencies.
+    1. The `yarn` command will allow you to install the dependencies.
 
     2. Project (with Docker)
 
@@ -58,11 +47,10 @@ This page will allow the user in particular to follow the number of sessions per
 
             You will need the [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). Once you have this extension installed, just click on the `Reopen in Container` button.
 
-            Once in the container, run the `yarn dev` command.
+    3. Run the `yarn dev` command.
+
+5. In the main folder once all the dependencies are installed launch the application with `npm start`.
 
 ### 2.3 Optional
 
-1. This project uses [Storybook](https://storybook.js.org/) and [Sass](https://sass-lang.com/) if you want to use them, you just need to install:
-    - [Storybook](https://storybook.js.org/) with `npx sb init`.
-    - Once install `npm run storybook`.
-    - [Sass](https://sass-lang.com/) with `npm i sass`.
+1. This project uses [Storybook](https://storybook.js.org/) if you want to use it, you just need to run `npm run storybook` command.
