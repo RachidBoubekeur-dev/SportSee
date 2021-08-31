@@ -1,4 +1,5 @@
-# SportSee
+![SportSee](https://raw.githubusercontent.com/RachidBoubekeur-dev/RachidBoubekeur_DA12_12072021/main/src/assets/logo2.png)
+## SportSee
 
 ## 1. General information
 
@@ -6,9 +7,19 @@ SportSee is the OpenClassrooms 12 project for training front-end developers.
 The project is to create a new version of the user's profile page.
 This page will allow the user in particular to follow the number of sessions performed as well as the number of calories burned.
 
-## 2. Project
+## 2. Skills assessed
 
-### 2.1 This project uses:
+✔️ Produce technical documentation for an application.
+
+✔️ Ensuring the data quality of an application.
+
+✔️ Develop advanced graphics using JavaScript libraries.
+
+✔️ Interact with a web service.
+
+## 3. Project
+
+### 3.1 This project uses:
 
 -   [Create React App](https://create-react-app.dev)
 -   [NodeJS](https://nodejs.org/en/) where [Docker Desktop](https://www.docker.com/products/docker-desktop)
@@ -19,7 +30,7 @@ This page will allow the user in particular to follow the number of sessions per
 -   [Storybook](https://storybook.js.org/)
 -   [Sass](https://sass-lang.com/)
 
-### 2.2 Launching the project
+### 3.2 Launching the project
 
 1. To start, you will need to `git clone` the project on your machine via a command in your terminal: `git clone https://github.com/RachidBoubekeur-dev/RachidBoubekeur_DA12_12072021.git`.
 
@@ -51,6 +62,6 @@ This page will allow the user in particular to follow the number of sessions per
 
 5. In the main folder once all the dependencies are installed launch the application with `npm start`.
 
-### 2.3 Optional
+### 3.3 Optional
 
 1. This project uses [Storybook](https://storybook.js.org/) if you want to use it, you just need to run `npm run storybook` command.
